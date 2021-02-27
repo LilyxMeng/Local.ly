@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Your Feed</title>
+</head>
+
+<body>
+    <!--nav bar-->
+    <div id="user_div">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Cool Web</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="feed.html">Feed</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Page 3</a></li>
+                    <li onclick="logout()"><a>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="search-title">Search for Products Below!</h1>
+        <div class="search">
+            <input type="text" placeholder="Search..." id="search-bar"></a>
+            <button type="submit" id="search-button">Go</button>
+        </div>
+
+
+        
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
+                authDomain: "techtogether-atlanta.firebaseapp.com",
+                projectId: "techtogether-atlanta",
+                storageBucket: "techtogether-atlanta.appspot.com",
+                messagingSenderId: "380330121460",
+                appId: "1:380330121460:web:657f4d7fec8117938826a1",
+                measurementId: "G-QTCT4HK8SX"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
+        <script src="js/login.js"></script>
+</body>
+
+
+</html>

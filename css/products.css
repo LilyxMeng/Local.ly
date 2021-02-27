@@ -1,0 +1,44 @@
+body {
+    background: #bc9787;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+  }
+  
+  input,
+  button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+  }
+  
+
+.search-title {
+    text-align: center;
+    padding: 10px 0 15px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+}
+
+#search-bar {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 75%;
+}
+
+#search-button {
+    padding: 10px 15px;
+    border-radius: 10px; 
+    border: 1px solid black;
+    width: 15%;
+}
