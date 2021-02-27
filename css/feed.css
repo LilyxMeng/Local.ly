@@ -1,23 +1,54 @@
 .imageSlide {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-    margin-top: -20px;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -20px;
+}
+
+.imageSlide img {
+  position: absolute;
+  animation: slide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide {
+  25% {
+    opacity: 1;
   }
-  
-  .imageSlide img {
-    position:absolute; 
-    animation: slide 20s infinite; 
-    opacity:0; 
-    width: 100%; 
-    height: 100%;
+  40% {
+    opacity: 0;
   }
-  
-  @keyframes slide  {25%{opacity:1;} 40%{opacity:0;}}
-  .imageSlide img:nth-child(1){animation-delay:0s;}
-  .imageSlide img:nth-child(2){animation-delay:5s;}
-  .imageSlide img:nth-child(3){animation-delay:10s;}
-  .imageSlide img:nth-child(4){animation-delay:15s;}
-  
-  
+}
+.imageSlide img:nth-child(1) {
+  animation-delay: 0s;
+}
+.imageSlide img:nth-child(2) {
+  animation-delay: 5s;
+}
+.imageSlide img:nth-child(3) {
+  animation-delay: 10s;
+}
+.imageSlide img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+#format-image {
+  transform: scale(0.2);
+  margin: -60% -30% -50% -30%;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 95%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
