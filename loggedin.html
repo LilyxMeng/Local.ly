@@ -41,7 +41,7 @@
 
     <center>
       <div class="search">
-        <input type="text" placeholder="Sweaters, birthday gifts, futons" id="search-bar" style="margin-right: 5px;"><a>
+        <input type="text" placeholder="Sweaters, birthday gifts, futons" id="search-bar" style="margin-right: 5px;">
           <button type="submit" id="search-button" onclick="grabSearch()"><svg width="29" height="28"
               viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -72,7 +72,7 @@
         <br /></br>
         <div class="business">
           <div class="business-left">
-            <img id="format-image" src="images/aicrm.png" alt="ice cream image">
+            <img id="format-image" class="mndImg" src="images/aicrm.png" alt="ice cream image">
           </div>
           <div class="business-right">
             <h3 id="business"><strong>Mandy's Ice Cream</strong></h3>
@@ -81,12 +81,18 @@
               Come down to the store and try their new flavors!: Sourpatch Blast,
               Starburst Frenzy, and Whipped Caramel Delight.</p>
           </div>
+          <div>
+            <ul>
+              <li><a re</li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="cards">
 
-        <div id="mandy" class="card">
+        <div id="rocco" class="card">
           <h3 style="float: right; margin-right: 20px"><a href="customerproducts.html">→</a></h3>
           <br /><br />
           <br /></br>
@@ -105,23 +111,26 @@
           </div>
         </div>
   
+        <div class="cards">
 
+          <div id="dine" class="card">
+            <h3 style="float: right; margin-right: 20px"><a href="customerproducts.html">→</a></h3>
+            <br /><br />
+            <br /></br>
+            <div class="business">
+              <div class="business-left">
+                <img id="format-image" src="images/dinepic.jpg" alt="restaurant picture">
+              </div>
+              <div class="business-right">
+                <h3 id="business"><strong>Dine & Dip</strong></h3>
+                <p class="card-description">Walk down to Dine & Dip! We have the
+                  town's most delicious burgers and sandwiches! We make our sauces
+                  with the best local ingredients! Dine & Dip will serve your tastebuds
+                  well! Guaranteed.</p>
+              </div>
+            </div>
+          </div>
 
-      <div id="dine" class="card">
-        <h3 style="float: right; margin-right: 20px">→</h3>
-        <h3 style="rotate: 90deg; float: left; margin-left: 20px">...</h3>
-        <br /><br />
-        <h3 id="business"><strong>Dine & Dip</strong></h3>
-        <br /><br /><br />
-        <img id="format-image" class="rccimg" src="images/burger.png" alt="img here">
-        </br>
-        <p class="card-description">Walk down to Dine & Dip! We have the
-          town's most delicious burgers and sandwiches! We make our sauces
-          with the best local ingredients! Dine & Dip will serve your tastebuds
-          well! Guaranteed.</p>
-      </div>
-
-    </div>
     <!--end of business inna card-->
 
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>

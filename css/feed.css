@@ -35,7 +35,6 @@
   animation-delay: 15s;
 } */
 
-
 .business {
   display: flex;
   margin: auto;
@@ -48,18 +47,19 @@
   transform: scale(0.6);
   margin-top: -130px;
   margin-left: -90px;
-
 }
 
 .business-right {
   margin-left: -120px;
-
 }
 
 #format-image {
-
-  margin-bottom: -18%;
+  margin-top: 15px;
+  margin-left: -30px;
+  margin-bottom: -20%;
   border-radius: 15px;
+  width: 750px;
+  height: 500px;
 }
 
 .cards {
@@ -68,7 +68,6 @@
   align-items: center;
   margin-top: 10px;
   padding-bottom: 40px;
-
 }
 
 .card {
@@ -88,6 +87,8 @@
 
 .card-description {
   padding: 20px;
+  display: flex;
+  text-align: right;
 }
 
 .search {
@@ -98,14 +99,16 @@
   padding-bottom: 50px;
   padding-top: 50px;
 }
+.mdnImg {
+}
 
 #search-bar {
   font-size: 25px;
   width: 50%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #F2F2F2;
-  background-color: #F2F2F2;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 #search-button {
