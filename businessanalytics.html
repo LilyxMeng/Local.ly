@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/businesspage.css">
+    <link rel="stylesheet" href="css/businessupdates.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- page when logged in -->
+    <div style="background-image: linear-gradient(180deg, #FEDFD0, #a58074); height: 100%;">
+        <nav class="navbar">
+            <div class="nav-title" href="loggedin.html">Local.ly</div>
+            <div class="nav-link">&nbsp</div>
+            <div class="nav-link">&nbsp</div>
+            <div class="nav-link"><a href="loggedin.html">Feed</a></div>
+            <div class="nav-link">&nbsp</div>
+            <div class="nav-link">&nbsp</div>
+            <div class="nav-link-business"><a href="businessanalytics.html">Add Your Business</a></div>
+            <div class="nav-link">&nbsp</div>
+            <div class="nav-link">&nbsp</div>
+            <div><a onclick="logout()">Logout</a></div>
+        </nav>
+
+        <h1 class="business-name">Hello, Mandy's Ice Cream</h1>
+
+        <nav class="business-nav">
+            <div class="bnav-link"><a href="businessanalytics.html">Analytics</a></div>
+            <div class="bnav-link"><a href="businessposts.html">Posts</a></div>
+            <div class="bnav-link"><a href="businessstories.html">Stories</a></div>
+        </nav>
+
+
+        <!--business inna card-->
+        <div class="cards">
+
+            <div id="mandy" class="card">
+                <div class="business-update">
+                    <h2>add graphs here</h2>
+                </div>
+            </div>
+
+            <div id="mandy" class="card">
+                <div class="business-update">
+                    <h2>We'll be closed for the winter storm. Hope everyone is staying safe!</h2>
+                    <h3 class="update-name">- Mandy's Ice Cream</h3>
+                </div>
+            </div>
+  
+
+            <div id="dine" class="card">
+                <h3 style="float: right; margin-right: 20px">→</h3>
+                <h3 style="rotate: 90deg; float: left; margin-left: 20px">...</h3>
+                <br /><br />
+                <h3 id="business"><strong>Dine & Dip</strong></h3>
+                <br /><br /><br />
+                <img id="format-image" src="images/burger.png" alt="img here">
+                </br>
+                <p class="card-description">Walk down to Dine & Dip! We have the
+                    town's most delicious burgers and sandwiches! We make our sauces
+                    with the best local ingredients! Dine & Dip will serve your tastebuds
+                    well! Guaranteed.</p>
+            </div>
+
+        </div>
+        <!--end of business inna card-->
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
+                authDomain: "techtogether-atlanta.firebaseapp.com",
+                projectId: "techtogether-atlanta",
+                storageBucket: "techtogether-atlanta.appspot.com",
+                messagingSenderId: "380330121460",
+                appId: "1:380330121460:web:657f4d7fec8117938826a1",
+                measurementId: "G-QTCT4HK8SX"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
+        <script src="js/login.js"></script>
+        <!--where we got the photos from!!-->
+        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+</body>
+
+</html>

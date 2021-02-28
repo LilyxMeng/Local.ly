@@ -1,0 +1,14 @@
+.business-update {
+    padding-top: 50px;
+    display: grid;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.update-name {
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
