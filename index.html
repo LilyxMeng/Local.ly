@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Login</title>
 </head>
 
@@ -22,60 +24,86 @@
 
   <!-- page when logged in -->
   <div id="user_div">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Cool Web</a>
+    <nav class="navbar navbar-default" style="height: 80px;">
+      <div class="container-fluid" style="height: 80px;">
+        <div class="navbar-header" style="height: 80px;">
+          <a class="navbar-brand" href="index.html" style="height: 79px; padding-top:30px; color: black;">Cool Web</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="feed.html">Feed</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="#">Page 3</a></li>
-          <li onclick="logout()"><a>Logout</a></li>
+        <ul class="nav navbar-nav" style="height: 80px;">
+          <li class="active"><a href="#" style="height: 79px; padding-top:30px; color: black;">Home</a></li>
+          <li><a href="feed.html" style="height: 79px; padding-top:30px; color: black;">Feed</a></li>
+          <li><a href="products.html" style="height: 79px; padding-top:30px; color: black;">Products</a></li>
+          <li><a href="#" style="height: 79px; padding-top:30px; color: black;">Page 3</a></li>
+          <li><a style="text-decoration: underline; margin-left: 38vw; height: 79px; padding-top: 30px; color: black;" href="#">Become a Business Owner</a></li>
+          <li><a onclick="logout()" style="height: 79px; padding-top:30px; color: black;">Logout</a></li>
         </ul>
       </div>
     </nav>
 
+    <h1 class="search-title">Find Local Businesses or Products you Love</h1>
+    <div class="search">
+      <input type="text" placeholder="Sweaters, birthday gifts, futons" id="search-bar"></a>
+      <button type="submit" id="search-button">🔍</button>
+    </div>
+
     <!--card for consumer/business-->
-    <center>
-      <div class="card">
-        <h4 class="option-title">Are You Here To:</h4>
-        <div class="decision">
-          <div class="option">
-            <img class="img" src="images/lending.png" alt="lol this didnt show up">
-            <a href="feed.html"><button class="choice">Become a Consumer</button></a>
-          </div>
-          <div class="option"> <img class="img" src="images/business.png" alt="lol this did not show up">
-            <button class="choice">Become a Business Owner</button>
-          </div>
+    <div class="cards">
+      <div class="card" style="margin-right: 5%;">
+        <div class="business-info">
+          <img class="img" src="images/lending.png" alt="lol this didnt show up">
+          <p class="business-title">Business Name</p>
+          <p class="business-description">What it sells, who it is</p>
         </div>
-        <div>
-    </center>
-  </div>
+      </div>
+
+      <div class="card">
+        <div class="business-info">
+          <img class="img" src="images/lending.png" alt="lol this didnt show up">
+          <p class="business-title">Business Name</p>
+          <p class="business-description">What it sells, who it is</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card" style="margin-right: 5%;">
+        <div class="business-info">
+          <img class="img" src="images/lending.png" alt="lol this didnt show up">
+          <p class="business-title">Business Name</p>
+          <p class="business-description">What it sells, who it is</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="business-info">
+          <img class="img" src="images/lending.png" alt="lol this didnt show up">
+          <p class="business-title">Business Name</p>
+          <p class="business-description">What it sells, who it is</p>
+        </div>
+      </div>
+    </div>
 
 
-  
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
-  <script>
-    var firebaseConfig = {
-      apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
-      authDomain: "techtogether-atlanta.firebaseapp.com",
-      projectId: "techtogether-atlanta",
-      storageBucket: "techtogether-atlanta.appspot.com",
-      messagingSenderId: "380330121460",
-      appId: "1:380330121460:web:657f4d7fec8117938826a1",
-      measurementId: "G-QTCT4HK8SX"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
+        authDomain: "techtogether-atlanta.firebaseapp.com",
+        projectId: "techtogether-atlanta",
+        storageBucket: "techtogether-atlanta.appspot.com",
+        messagingSenderId: "380330121460",
+        appId: "1:380330121460:web:657f4d7fec8117938826a1",
+        measurementId: "G-QTCT4HK8SX"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 
-  <script src="js/login.js"></script>
-  <!--where we got the photos from!!-->
-  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+    <script src="js/login.js"></script>
+    <!--where we got the photos from!!-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->

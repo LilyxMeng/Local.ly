@@ -1,0 +1,79 @@
+.search-title {
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#search-bar {
+    font-size: 25px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+}
+
+#search-button {
+    font-size: 30px;
+    padding: 6.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 1px solid #4f4f4f;
+    background-color: #4f4f4f;
+}
+
+#search-button:hover {
+    background-color: #808080;
+    border: 1px solid #808080;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+
+  padding-bottom: 60px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 50%;
+  height: 350px;
+  background-color: rgb(255, 244, 244);
+  border-radius: 12px;
+}
+
+.business-info {
+    padding-top: 50px;
+}
+
+img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.business-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.business-description {
+    font-size: 20px;
+}
