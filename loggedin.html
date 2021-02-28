@@ -42,13 +42,13 @@
     <center>
       <div class="search">
         <input type="text" placeholder="Sweaters, birthday gifts, futons" id="search-bar" style="margin-right: 5px;">
-          <button type="submit" id="search-button" onclick="grabSearch()"><svg width="29" height="28"
-              viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M28.6456 26.0077L20.3988 18.0454C21.9963 16.1403 22.9581 13.7196 22.9581 11.083C22.9581 4.97219 17.8082 0 11.479 0C5.14982 0 0 4.97214 0 11.0829C0 17.1937 5.14988 22.1659 11.4791 22.1659C14.2098 22.1659 16.7171 21.2373 18.6903 19.695L26.9371 27.6573C27.1727 27.8847 27.482 27.9991 27.7914 27.9991C28.1007 27.9991 28.4101 27.8847 28.6457 27.6573C29.1181 27.2011 29.1181 26.4638 28.6456 26.0077ZM11.4791 19.8327C6.48143 19.8327 2.41666 15.9081 2.41666 11.0829C2.41666 6.25774 6.48143 2.33322 11.4791 2.33322C16.4767 2.33322 20.5415 6.25774 20.5415 11.0829C20.5415 15.9081 16.4766 19.8327 11.4791 19.8327Z"
-                fill="white" />
-            </svg>
-          </button>
+        <button type="submit" id="search-button" onclick="grabSearch()"><svg width="29" height="28" viewBox="0 0 29 28"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.6456 26.0077L20.3988 18.0454C21.9963 16.1403 22.9581 13.7196 22.9581 11.083C22.9581 4.97219 17.8082 0 11.479 0C5.14982 0 0 4.97214 0 11.0829C0 17.1937 5.14988 22.1659 11.4791 22.1659C14.2098 22.1659 16.7171 21.2373 18.6903 19.695L26.9371 27.6573C27.1727 27.8847 27.482 27.9991 27.7914 27.9991C28.1007 27.9991 28.4101 27.8847 28.6457 27.6573C29.1181 27.2011 29.1181 26.4638 28.6456 26.0077ZM11.4791 19.8327C6.48143 19.8327 2.41666 15.9081 2.41666 11.0829C2.41666 6.25774 6.48143 2.33322 11.4791 2.33322C16.4767 2.33322 20.5415 6.25774 20.5415 11.0829C20.5415 15.9081 16.4766 19.8327 11.4791 19.8327Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
       <script src="js/search.js"></script>
     </center>
@@ -80,14 +80,14 @@
               Mandy's Ice Cream will satisfy your want for candied ice cream!
               Come down to the store and try their new flavors!: Sourpatch Blast,
               Starburst Frenzy, and Whipped Caramel Deli"ght.</p>
-              <div id="bttns" class="card-icons">
-                <div>
+            <div id="bttns" class="card-icons">
+              <div>
                 <a href=" ">
                   <div id="unliked" onclick="changeImg()">
-                  <img class="icns" src="images/unknown.png" alt="">
+                    <img class="icns" src="images/unknown.png" alt="">
                   </div>
                   <div id="liked" onclick="changeImg()">
-                  <img  style="display: none" class="icns" src="images/heart.png" alt=""> 
+                    <img style="display: none" class="icns" src="images/heart.png" alt="">
                   </div>
                 </a>
               </div>
@@ -96,8 +96,9 @@
                   <img class="icns" src="images/unknown-1.png" alt="">
                 </a>
               </div>
-            </div>  
+            </div>
             <button class="ReqNHld">REQUEST HOLD</button>
+
           </div>
         </div>
       </div>
@@ -111,6 +112,7 @@
           <div class="business">
             <div class="business-left">
               <img id="format-image" src="images/roccothrift.png" alt="thrift store image">
+              <div></div>
             </div>
             <div class="business-right">
               <h3 id="business"><strong>Rocco Thrift$</strong></h3>
@@ -119,21 +121,21 @@
                 revamp given clothes and sell them for others to use! You can also buy
                 clothes from us for pretty cheap! We got the new styles in store each
                 and every day!</p>
-                <div id="bttns" class="card-icons">
-                  <div>
-                    <a href=" ">
-                      <img class="icns" src="images/unknown.png" alt="">
-                    </div>
-                  <div> 
-                    <a href=" ">
-                      <img class="icns" src="images/unknown-1.png" alt="">
-                    </div>
-                  </div>
-                <button class="ReqNHld">REQUEST HOLD</button>
+              <div class="card-icons">
+                <div>
+                  <a href=" ">
+                    <img class="icns" src="images/unknown.png" alt="">
+                </div>
+                <div>
+                  <a href=" ">
+                    <img class="icns" src="images/unknown-1.png" alt="">
+                </div>
+              </div>
+              <button class="ReqNHld">REQUEST HOLD</button>
             </div>
           </div>
         </div>
-  
+
         <div class="cards">
 
           <div id="dine" class="card">
@@ -143,62 +145,84 @@
             <div class="business">
               <div class="business-left">
                 <img id="format-image" src="images/dinepic.jpg" alt="restaurant picture">
-                <div class="card-icons">
-                  <div>
-                    <a href=" ">
+                <div class="share-icons" >
+                  <div>       
                       <img class="icns" src="images/unknown.png" alt="">
-                    </div>
-                  <div> 
-                    <a href=" ">
+                  </div>
+                  <div>
                       <img class="icns" src="images/unknown-1.png" alt="">
-                    </div>
                   </div>
                 </div>
+              </div>
               <div class="business-right">
                 <h3 id="business"><strong>Dine & Dip</strong></h3>
                 <p class="card-description">Walk down to Dine & Dip! We have the
                   town's most delicious burgers and sandwiches! We make our sauces
                   with the best local ingredients! Dine & Dip will serve your tastebuds
                   well! Guaranteed.</p>
-                  <div id="bttns" class="card-icons">
-                    <div>
-                      <a href=" ">
-                        <img class="icns" src="images/unknown.png" alt="">
-                      </div>
-                    <div> 
-                      <a href=" ">
-                        <img class="icns" src="images/unknown-1.png" alt="">
-                      </div>
-                    </div>
-                  <button class="ReqNHld">REQUEST HOLD</button>
-              </div> 
-             </div>
+
+                <button class="ReqNHld">REQUEST HOLD</button>
+              </div>
             </div>
           </div>
+        </div> 
 
-    <!--end of business inna card-->
+        <div class="cards">
 
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+          <div id="dine" class="card">
+            <h3 style="float: right; margin-right: 20px"><a href="customerproducts.html">→</a></h3>
+            <br /><br />
+            <br /></br>
+            <div class="business">
+              <div class="business-left">
+                <img id="format-image" src="images/dinepic.jpg" alt="restaurant picture">
+                <div class="share-icons" >
+                  <div>       
+                      <img class="icns" src="images/unknown.png" alt="">
+                  </div>
+                  <div>
+                      <img class="icns" src="images/unknown-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="business-right">
+                <h3 id="business"><strong>Dine & Dip</strong></h3>
+                <p class="card-description">Walk down to Dine & Dip! We have the
+                  town's most delicious burgers and sandwiches! We make our sauces
+                  with the best local ingredients! Dine & Dip will serve your tastebuds
+                  well! Guaranteed.</p>
 
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
-        authDomain: "techtogether-atlanta.firebaseapp.com",
-        projectId: "techtogether-atlanta",
-        storageBucket: "techtogether-atlanta.appspot.com",
-        messagingSenderId: "380330121460",
-        appId: "1:380330121460:web:657f4d7fec8117938826a1",
-        measurementId: "G-QTCT4HK8SX"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
+                <button class="ReqNHld">REQUEST HOLD</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="js/login.js"></script>
-    <script src="js/heart.js"></script>
-    <!--where we got the photos from!!-->
-    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+
+  
+      <!--end of business inna card-->
+
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+      <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
+          authDomain: "techtogether-atlanta.firebaseapp.com",
+          projectId: "techtogether-atlanta",
+          storageBucket: "techtogether-atlanta.appspot.com",
+          messagingSenderId: "380330121460",
+          appId: "1:380330121460:web:657f4d7fec8117938826a1",
+          measurementId: "G-QTCT4HK8SX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+
+      <script src="js/login.js"></script>
+      <script src="js/heart.js"></script>
+      <!--where we got the photos from!!-->
+      <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
