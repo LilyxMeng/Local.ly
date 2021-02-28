@@ -10,5 +10,11 @@
   display: flex;
   padding-top: 20px;
   justify-content: flex-end;
-  padding-right: 5%;
+  padding-right: 5%; 
+}
+
+.fmt-img {
+border-radius: 15px; 
+width: 500px;
+
 }
