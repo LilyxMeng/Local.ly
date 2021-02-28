@@ -1,4 +1,4 @@
-var searhValue = document.getElementById("search-bar")
+let searhValue = document.getElementById("search-bar")
 
 function grabSearch() {
     if (searhValue.value.toLowerCase() == "mandy's ice cream") { 

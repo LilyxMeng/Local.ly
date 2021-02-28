@@ -1,17 +1,26 @@
+//this is just what i have so far
 const http = require('http');
+const fs = require('fs');
 
 const server = http.createServer((req, res) => {
-    console.log('request made');
+    console.log(req.url, req.method) ;
 
-    // set header content type
-   // res.setHeader('Content.Type', 'text/plain');
+    //set header content type
+   res.setHeader('Content-Type', 'text/html');
 
-   // res.write('hello world!');
-    //res.end();
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000');
-});
-
+   //send html file
+   fs.readFile('./views/JStestIndex.html', (err, data) => {
+       if (err) {
+           res.write('there was an error');
+           console.log(err);
+           res.end();
+       }else{
+           //note for tmr - I get the success message, but html not showing up?
+           //see personal 
+           res.write('success');
+           res.write(data);
+           res.end();
+       }
+    })
+    });
 
