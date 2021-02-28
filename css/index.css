@@ -26,9 +26,7 @@
 
 #search-button {
     font-size: 30px;
-    padding: 6.5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 11.5px 15px 3px 15px;
     border-radius: 10px;
     border: 1px solid #4f4f4f;
     background-color: #4f4f4f;
@@ -76,4 +74,8 @@ img {
 
 .business-description {
     font-size: 20px;
+}
+
+.body-color {
+    background-image: linear-gradient(180deg, #FEDFD0, #a58074);
 }

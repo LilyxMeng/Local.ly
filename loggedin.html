@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/feed.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <!-- not logged in page -->
+  <div id="login_div" class="main-div">
+    <h3 class="login-title">Login to Save and Interact with Business</h3>
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+    <button onclick="login()">Login</button>
+    <br>
+    <p style="text-align: center;">Create an account <a style="text-decoration: underline" href="#">here</a></p>
+  </div>
+
+  <!-- page when logged in -->
+  <div id="user_div" style="background-image: linear-gradient(180deg, #FEDFD0, #a58074); height: 100%;">
+    <nav class="navbar">
+      <div class="nav-title">Local.ly</div>
+      <div class="nav-link">&nbsp</div>
+      <div class="nav-link"><a href="loggedin.html">Feed</a></div>
+      <div class="nav-link">&nbsp</div>
+      <div class="nav-link"><a href="products.html">Products</a></div>
+      <div class="nav-link">&nbsp</div>
+      <div class="nav-link-business"><a href="#">Add Your Business</a></div>
+      <div class="nav-link">&nbsp</div>
+      <div><a onclick="logout()">Logout</a></div>
+    </nav>
+    
+    <center>
+      <div class="search">
+        <input type="text" placeholder="Sweaters, birthday gifts, futons" id="search-bar" style="margin-right: 5px;"><a>
+        <button type="submit" id="search-button" onclick="grabSearch()"><svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.6456 26.0077L20.3988 18.0454C21.9963 16.1403 22.9581 13.7196 22.9581 11.083C22.9581 4.97219 17.8082 0 11.479 0C5.14982 0 0 4.97214 0 11.0829C0 17.1937 5.14988 22.1659 11.4791 22.1659C14.2098 22.1659 16.7171 21.2373 18.6903 19.695L26.9371 27.6573C27.1727 27.8847 27.482 27.9991 27.7914 27.9991C28.1007 27.9991 28.4101 27.8847 28.6457 27.6573C29.1181 27.2011 29.1181 26.4638 28.6456 26.0077ZM11.4791 19.8327C6.48143 19.8327 2.41666 15.9081 2.41666 11.0829C2.41666 6.25774 6.48143 2.33322 11.4791 2.33322C16.4767 2.33322 20.5415 6.25774 20.5415 11.0829C20.5415 15.9081 16.4766 19.8327 11.4791 19.8327Z"
+              fill="white"/>
+          </svg>
+        </button>
+      </div>
+      <script src="js/search.js"></script>
+    </center>
+
+    <!--
+      <div style="margin-top: 30px;" class="search">
+        <input type="text" placeholder="Search..." id="search-bar"></a>
+        <button type="submit" id="search-button" onclick="grabSearch()">Go</button>
+      </div>
+      <script src="js/search.js"></script>-->
+
+
+    <!--end of search bar-->
+
+    <!--business inna card-->
+    <div class="cards">
+
+      <div id="mandy" class="card">
+        <h3 style="float: right; margin-right: 20px">→</h3>
+        <h3 style="rotate: 90deg; float: left; margin-left: 20px">...</h3>
+        <br /><br />
+        <h3 id="business" style="padding-bottom:25px;"><strong>Mandy's Ice Cream</strong></h3>
+        <br /></br>
+        <img id="format-image" src="images/ice-cream.png" alt="ice cream image">
+        </br>
+        <p class="card-description">Ever had candy in your ice cream? Well,
+          Mandy's Ice Cream will satisfy your want for candied ice cream!
+          Come down to the store and try their new flavors!: Sourpatch Blast,
+          Starburst Frenzy, and Whipped Caramel Delight.</p>
+      </div>
+
+      <div id="rocco" class="card">
+        <h3 style="float: right; margin-right: 20px">→</h3>
+        <h3 style="rotate: 90deg; float: left; margin-left: 20px">...</h3>
+        <br /><br />
+        <h3 id="business" class="card-title"><strong>Rocco Thrift$</strong></h3>
+        <br /></br>
+        <img id="format-image" src="images/wardrobe.png" alt="wardrobe image">
+        </br>
+        <p class="card-description">Have old clothes you don't need anymore?
+          Want to donate to a good cause? Donate your clothes to Rocco's! We
+          revamp given clothes and sell them for others to use! You can also buy
+          clothes from us for pretty cheap! We got the new styles in store each
+          and every day!</p>
+      </div>
+
+      <div id="dine" class="card">
+        <h3 style="float: right; margin-right: 20px">→</h3>
+        <h3 style="rotate: 90deg; float: left; margin-left: 20px">...</h3>
+        <br /><br />
+        <h3 id="business"><strong>Dine & Dip</strong></h3>
+        <br /><br /><br />
+        <img id="format-image" src="images/burger.png" alt="img here">
+        </br>
+        <p class="card-description">Walk down to Dine & Dip! We have the
+          town's most delicious burgers and sandwiches! We make our sauces
+          with the best local ingredients! Dine & Dip will serve your tastebuds
+          well! Guaranteed.</p>
+      </div>
+
+    </div>
+    <!--end of business inna card-->
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0GVmLSVHyknqtV-_fVJz4KUSwqxl6Ms8",
+        authDomain: "techtogether-atlanta.firebaseapp.com",
+        projectId: "techtogether-atlanta",
+        storageBucket: "techtogether-atlanta.appspot.com",
+        messagingSenderId: "380330121460",
+        appId: "1:380330121460:web:657f4d7fec8117938826a1",
+        measurementId: "G-QTCT4HK8SX"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script src="js/login.js"></script>
+    <!--where we got the photos from!!-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+</body>
+
+</html>

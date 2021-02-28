@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  font-size: 20px;
+}
+
+.nav-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 body {
   background: #bc9787;
   padding: 0px;
@@ -41,9 +60,9 @@ button {
 
 .main-div button,
 .loggedin-div button {
-  background: #5d8ffc;
-  color: #fff;
-  border: 1px solid #5d8ffc;
+  background: #F2F2F2;
+  color: rgb(99, 98, 98);
+  border: 1px solid rgb(99, 98, 98);
   border-radius: 5px;
   padding: 15px;
   display: block;
@@ -55,16 +74,17 @@ button {
 
 .main-div button:hover,
 .loggedin-div button:hover {
-  background: #fff;
-  color: #5d8ffc;
-  border: 1px solid #5d8ffc;
+  background: rgb(99, 98, 98);
+  color: #F2F2F2;
+  border: 1px solid #F2F2F2;
   cursor: pointer;
 }
-
 
 .login-title {
   padding-bottom: 10px;
   text-align: center;
+  font-weight: bold;
+  padding-bottom: 25px;
 }
 
 .card {
@@ -113,7 +133,9 @@ h4 {
   text-align: center;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   color: inherit;
 }
 
@@ -121,8 +143,6 @@ button:hover {
   background-color: #e5e5e5;
   cursor: pointer;
 }
-
-
 
 /*
 @keyframes slide {
