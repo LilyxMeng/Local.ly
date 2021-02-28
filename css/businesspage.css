@@ -1,15 +1,28 @@
 .business-name {
-    margin-top: 50px;
-    margin-left: 5%;
-    font-weight: bold;
+  margin-top: 50px;
+  margin-left: 5%;
+  font-weight: bold;
 }
 
 .business-nav {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 5%;
-    width: 50%;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.graph-img {
+  margin: auto;
+  margin-top: -55px;
+  width: inherit;
+  height: 400px;
+  padding-top: 25px;
+}
+
+.card-graph {
+  width: 80%;
+  height: 430px;
 }

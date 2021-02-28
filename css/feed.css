@@ -99,9 +99,21 @@
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.mdnImg {
+
+.icns {
+  width: 30px;
 }
 
+.ReqNHld {
+  width: 135px;
+  height: 40px;
+  background: #fdc1a5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-color: #fdc1a5;
+  font-family: "Roboto";
+  opacity: 50%;
+}
 #search-bar {
   font-size: 25px;
   width: 50%;
@@ -117,4 +129,18 @@
   border-radius: 10px;
   border: 1px solid #4f4f4f;
   background-color: #4f4f4f;
+}
+
+#bttns li {
+  display: inline;
+  justify-content: left;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  margin: auto;
+  padding-top: -10px;
+  padding-bottom: 10px;
 }
