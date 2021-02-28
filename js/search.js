@@ -5,23 +5,23 @@ function grabSearch() {
         /*document.getElementById("mandy").style.display = "grid";*/ //change flex to something else
         document.getElementById("rocco").style.display = "none";
         document.getElementById("dine").style.display = "none";
-        console.log("Function Worked!")
+        console.log("Function Worked!");
        }
     else if (searhValue.value.toLowerCase() == "rocco thrift$") { 
         document.getElementById("mandy").style.display = "none";
         document.getElementById("dine").style.display = "none";
-        console.log("Function Worked!")
+        console.log("Function Worked!");
        }
     else if (searhValue.value.toLowerCase() == "dine & dip") { 
         document.getElementById("mandy").style.display = "none";
         document.getElementById("rocco").style.display = "none";
-        console.log("Function Worked!")
+        console.log("Function Worked!");
        }
     else {
         document.getElementById("mandy").style.display = "none";
         document.getElementById("rocco").style.display = "none";
         document.getElementById("dine").style.display = "none";
-        console.log("Could not get item.")
+        console.log("Could not get item.");
     }
 }
 
